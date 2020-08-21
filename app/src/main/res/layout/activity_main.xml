@@ -67,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginEnd="162dp"
-        android:layout_marginBottom="312dp"
+        android:layout_marginBottom="372dp"
         android:onClick="clickFunction"
         android:text="SUBMIT"
         app:layout_constraintBottom_toBottomOf="parent"
