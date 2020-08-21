@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
         Log.i( "buy",buyTextEdit.getText().toString());
         Log.i( "sell ", sellEditText.getText().toString());
         Log.i("quantity",quantityEditText.getText().toString());
+
+        Toast.makeText(this, "Data Entered", Toast.LENGTH_LONG).show();
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
