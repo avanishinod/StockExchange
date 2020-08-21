@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/buy"
+        android:id="@+id/buyTextEdit"
         android:layout_width="150dp"
         android:layout_height="58dp"
         android:layout_marginStart="16dp"
@@ -29,13 +29,13 @@
         android:ems="10"
         android:hint="BUY"
         android:inputType="numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/sell"
+        app:layout_constraintEnd_toStartOf="@+id/sellEditText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/sell"
+        android:id="@+id/sellEditText"
         android:layout_width="150dp"
         android:layout_height="58dp"
         android:layout_marginTop="56dp"
@@ -47,9 +47,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/quantity"
-        android:layout_width="157dp"
-        android:layout_height="52dp"
+        android:id="@+id/quantityEditText"
+        android:layout_width="150dp"
+        android:layout_height="58dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="238dp"
         android:ems="10"
@@ -58,15 +58,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buy"
+        app:layout_constraintTop_toBottomOf="@+id/buyTextEdit"
         app:layout_constraintVertical_bias="0.136" />
-
-    <RadioGroup
-        android:id="@+id/exchangeradio"
-        android:layout_width="43dp"
-        android:layout_height="51dp"
-        tools:layout_editor_absoluteX="328dp"
-        tools:layout_editor_absoluteY="318dp" />
 
     <Button
         android:id="@+id/submit"
