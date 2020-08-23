@@ -76,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/Turn"
+        android:id="@+id/BestSPTextView"
         android:layout_width="406dp"
         android:layout_height="38dp"
         android:layout_marginStart="2dp"

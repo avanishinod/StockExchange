@@ -3,16 +3,14 @@ package com.example.stocks;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView Turnoverdisplay;
+    TextView BestSelling;
     EditText buytext, selltext, quantitytext;
     Button buttonsubmit;
 
@@ -21,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Turnoverdisplay = (TextView) findViewById(R.id.Turn);
+        BestSelling = (TextView) findViewById(R.id.BestSPTextView);
         buytext=(EditText) findViewById(R.id.buyTextEdit);
         selltext=(EditText) findViewById(R.id.sellEditText);
         quantitytext=(EditText) findViewById(R.id.quantityEditText);
@@ -39,10 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 Double sellDouble = Double.parseDouble(sell);
                 Double quantityDouble = Double.parseDouble(quantity);
 
-                Double Turnover = (buyDouble*quantityDouble) + (sellDouble*quantityDouble);
-                String TurnoverString = Double.toString(Turnover);
+                Double BestSP = (buyDouble*(6.05/100))+buyDouble;
+                String BestSPString = Double.toString(BestSP);
 
-                Turnoverdisplay.setText("TurnOver "+ TurnoverString);
+                BestSelling.setText("Best Selling Price "+ BestSPString);
 
 
             }
