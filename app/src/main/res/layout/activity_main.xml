@@ -8,6 +8,48 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/TotalTaxTextView"
+        android:layout_width="373dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/DPGainTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DPGainTextView"
+        android:layout_width="373dp"
+        android:layout_height="56dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/ProfitTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ProfitTextView"
+        android:layout_width="373dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/GainPercentTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/GainPercentTextView"
+        android:layout_width="373dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="22dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/NetGainPercentTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="501dp"
         android:layout_height="79dp"
@@ -21,8 +63,8 @@
 
     <EditText
         android:id="@+id/buyTextEdit"
-        android:layout_width="150dp"
-        android:layout_height="58dp"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="64dp"
@@ -36,79 +78,87 @@
 
     <EditText
         android:id="@+id/sellEditText"
-        android:layout_width="150dp"
-        android:layout_height="58dp"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="56dp"
-        android:layout_marginEnd="28dp"
         android:ems="10"
         android:hint="SELL"
         android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buyTextEdit"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/quantityEditText"
-        android:layout_width="157dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="238dp"
+        android:layout_width="102dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="28dp"
         android:ems="10"
         android:hint="QUANTITY"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buyTextEdit"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintStart_toEndOf="@+id/sellEditText"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
         android:layout_marginStart="161dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="162dp"
-        android:layout_marginBottom="396dp"
         android:text="SUBMIT"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/BestSPTextView"
-        android:layout_width="399dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginEnd="3dp"
-        android:layout_marginBottom="292dp"
+        android:layout_width="373dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="100dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
-        android:layout_width="158dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/quantityEditText"
-        app:layout_constraintTop_toBottomOf="@+id/sellEditText">
+        android:id="@+id/radioGroup"
+        android:layout_width="187dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyTextEdit">
 
         <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
+            android:id="@+id/radioButton4"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="NSE" />
+            android:text="NSE"
+            android:textSize="18sp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BSE" />
+            android:id="@+id/radioButton3"
+            android:layout_width="104dp"
+            android:layout_height="47dp"
+            android:text="BSE"
+            android:textSize="18sp" />
+
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/NetGainPercentTextView"
+        android:layout_width="373dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="22dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/BestSPTextView"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
