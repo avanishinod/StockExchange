@@ -62,7 +62,8 @@
         android:id="@+id/textView"
         android:layout_width="501dp"
         android:layout_height="79dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="STOCK EXCHANGE"
         android:textAlignment="center"
         android:textColor="#0E1116"
@@ -122,6 +123,8 @@
         android:layout_marginEnd="162dp"
         android:text="SUBMIT"
         android:background="#FCF26A"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="1.0"
     app:layout_constraintStart_toStartOf="parent"
@@ -151,10 +154,11 @@
             android:id="@+id/radioButton4"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-         android:text="NSE"
+            android:text="NSE"
+            android:fontFamily="sans-serif-smallcaps"
             android:textColor="#0E1116
 "
-         android:textSize="18sp" />
+         android:textSize="20sp" />
 
         <RadioButton
         android:id="@+id/radioButton3"
@@ -162,7 +166,8 @@
         android:layout_height="47dp"
         android:text="BSE"
             android:textColor="#0E1116"
-        android:textSize="18sp" />
+            android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20sp" />
 
     </RadioGroup>
 
