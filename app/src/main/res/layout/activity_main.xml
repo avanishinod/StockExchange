@@ -4,8 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/TurnoverTextView"
     android:layout_width="match_parent"
+    android:background="#FFF9E1"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"><![CDATA[
+
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+
+
+    ]]>
 
     <TextView
         android:id="@+id/TotalTaxTextView"
@@ -13,6 +21,7 @@
         android:layout_height="56dp"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/DPGainTextView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,9 +62,10 @@
         android:id="@+id/textView"
         android:layout_width="501dp"
         android:layout_height="79dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:text="STOCK EXCHANGE"
         android:textAlignment="center"
+        android:textColor="#0E1116"
         android:textSize="47dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,8 +110,8 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/sellEditText"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    app:layout_constraintStart_toEndOf="@+id/sellEditText"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/submit"
@@ -111,17 +121,18 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="162dp"
         android:text="SUBMIT"
+        android:background="#FCF26A"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/BestSPTextView"
         android:layout_width="373dp"
         android:layout_height="56dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -140,15 +151,18 @@
             android:id="@+id/radioButton4"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="NSE"
-            android:textSize="18sp" />
+         android:text="NSE"
+            android:textColor="#0E1116
+"
+         android:textSize="18sp" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="104dp"
-            android:layout_height="47dp"
-            android:text="BSE"
-            android:textSize="18sp" />
+        android:id="@+id/radioButton3"
+        android:layout_width="104dp"
+        android:layout_height="47dp"
+        android:text="BSE"
+            android:textColor="#0E1116"
+        android:textSize="18sp" />
 
     </RadioGroup>
 
@@ -156,7 +170,7 @@
         android:id="@+id/NetGainPercentTextView"
         android:layout_width="373dp"
         android:layout_height="58dp"
-        android:layout_marginStart="22dp"
+        android:layout_marginStart="20dp"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/BestSPTextView"
         app:layout_constraintStart_toStartOf="parent" />
