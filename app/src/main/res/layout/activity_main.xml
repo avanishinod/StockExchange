@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:background="#FFF9E1"
     android:layout_height="match_parent"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
     tools:context=".MainActivity"><![CDATA[
 
     android:layout_height="match_parent"
@@ -80,12 +81,14 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="64dp"
         android:ems="10"
+        android:drawableStart="@drawable/ic_buy_icon"
         android:hint="BUY"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toStartOf="@+id/sellEditText"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        />
 
     <EditText
         android:id="@+id/sellEditText"
@@ -95,6 +98,7 @@
         android:layout_marginTop="56dp"
         android:ems="10"
         android:hint="SELL"
+        android:drawableStart="@drawable/ic_buy_icon"
         android:inputType="numberDecimal"
         app:layout_constraintStart_toEndOf="@+id/buyTextEdit"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -116,19 +120,19 @@
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="91dp"
-        android:layout_height="50dp"
+        android:layout_width="229dp"
+        android:layout_height="52dp"
         android:layout_marginStart="161dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="162dp"
-        android:text="SUBMIT"
         android:background="#FCF26A"
         android:fontFamily="sans-serif-smallcaps"
+        android:text="SUBMIT"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="1.0"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/BestSPTextView"
